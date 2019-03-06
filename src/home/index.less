@@ -1,0 +1,53 @@
+:global {
+  html {
+    body {
+      background-color: #eee;
+
+      header {
+        margin: 15px 15px 10px;
+        background: #fff;
+        border-radius: 3px;
+        padding: 10px 0;
+
+        span {
+          padding-left: 20px;
+        }
+        a {
+          margin-left: 15px;
+          margin: 5px 0 5px 15px;
+        }
+      }
+      .mainner {
+        padding: 0 15px;
+        position: relative;
+        padding-left: 265px;
+
+        .mainner_l {
+          position: absolute;
+          width: 240px;
+          background: #fff;
+          border-radius: 3px;
+          margin-right: 10px;
+          left: 15px;
+        }
+        .mainner_r {
+          border-radius: 3px;
+          background: #fff;
+          padding: 20px;
+          position: relative;
+
+          .non-order-job-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            z-index: 1;
+          }
+        }
+      }
+    }
+    .ant-confirm-btns button:last-child {
+      float: left;
+      margin-right: 10px;
+    }
+  }
+}

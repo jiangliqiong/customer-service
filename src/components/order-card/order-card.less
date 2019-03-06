@@ -1,0 +1,122 @@
+.order-card {
+  border-radius: 3px;
+  margin: 20px 0;
+  border: 1px solid #D6E4EF;
+
+  .order-summary {
+    background-color: #F1F8FD;
+    cursor: pointer;
+    overflow: auto;
+  }
+  .order-summary-item {
+    color: #333;
+    display: inline-block;
+    vertical-align: top;
+
+    .daily-sequence {
+      padding: 10px 10px 5px;
+      text-align: center;
+      background-color: #D3E9FA;
+    }
+    .order-type {
+      padding: 5px 10px 10px;
+      text-align: center;
+      background-color: #C3DDF1;
+      color: #fff;
+    }
+  }
+
+
+  &.abnormal {
+    border: 1px solid #F5E9E6;
+    .order-summary {
+      background-color: #FCF8F6;
+    }
+    .order-summary-item {
+      .daily-sequence {
+        background-color: #FAE8E4;
+      }
+      .order-type {
+        background-color: #F0D5CE;
+      }
+    }
+    .order-more-info {
+      border-top: 1px solid #F5E9E6;
+    }
+  }
+
+  .order-summary-info {
+    padding: 10px 15px;
+    line-height: 22px;
+    cursor: auto;
+
+    .order-time, .order-id-span {
+      padding-left: 20px;
+    }
+  }
+  .order-summary-status {
+    padding: 10px 15px;
+    line-height: 22px;
+    float: right;
+
+    .order-status, .order-pay-type {
+      padding-left: 20px;
+    }
+  }
+
+  .order-more-info {
+    display: none;
+    padding: 0 20px;
+    background-color: #fff;
+    border-top: 1px solid #D6E4EF;
+
+    .order-shipping {
+      width: 50%;
+      padding: 15px 0;
+      line-height: 24px;
+      display: inline-block;
+    }
+    .order-abnormal-message {
+      width: 50%;
+      margin: 15px 0;
+      line-height: 24px;
+      padding-left: 20px;
+      vertical-align: top;
+      display: inline-block;
+      border-left: 1px solid #ECEEF0;
+
+      &>div>span {
+        width: 220px;
+        vertical-align: top;
+        display: inline-block;
+        padding-left: 5px;
+      }
+    }
+    .order-address {
+      padding-left: 60px;
+    }
+    .order-user {
+      color: #999;
+      padding-left: 20px;
+    }
+    .order-key-info {
+      color: #999;
+      line-height: 24px;
+
+      span {
+        display: inline-block;
+        width: 220px;
+      }
+    }
+    .order-button-bar {
+      padding: 20px 0;
+      height: 68px;
+
+      button, a {
+        margin-right: 10px;
+        vertical-align: top;
+      }
+    }
+  }
+}
+
